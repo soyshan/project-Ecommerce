@@ -1,0 +1,254 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow:scroll; 
+}
+
+.pagina-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 100vh;
+    width: 100vh;
+}
+
+.div {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px;
+    position: relative;
+}
+
+.overlap-group {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+/* Estilos para imágenes */
+.overlap-group img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.pagina-carrito {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+   
+}
+
+.pagina-carrito .div {
+    width: 1200px;
+    height: 1023px;
+    position: relative;
+}
+
+.pagina-carrito .overlap-group {
+    position: absolute;
+    width: 963px;
+    height: 998px;
+    top: 15px;
+    left: 817px;
+}
+
+.pagina-carrito .pexels-bruno-bueno {
+    position: absolute;
+    width: 364px;
+    height: 371px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.pagina-carrito .trompeta {
+    position: absolute;
+    width: 369px;
+    height: 368px;
+    top: 0;
+    left: 369px;
+    object-fit: cover;
+}
+
+.pagina-carrito .arbol {
+    position: absolute;
+    width: 360px;
+    height: 370px;
+    top: 402px;
+    left: 0;
+    object-fit: cover;
+}
+
+.pagina-carrito .chicatrigo {
+    position: absolute;
+    width: 299px;
+    height: 439px;
+    top: 360px;
+    left: 418px;
+    object-fit: cover;
+}
+
+.pagina-carrito .gekko {
+    position: absolute;
+    width: 380px;
+    height: 208px;
+    top: 788px;
+    left: 0;
+    object-fit: cover;
+}
+
+.pagina-carrito .espinascielo {
+    position: absolute;
+    width: 198px;
+    height: 193px;
+    top: 805px;
+    left: 482px;
+    object-fit: cover;
+}
+
+.pagina-carrito .rectangle {
+    width: 661px;
+    height: 868px;
+    top: 63px;
+    left: 29px;
+    background-color: #e4e2e280;
+    border: 6px solid;
+    border-color: #000000;
+    position: absolute;
+    border-radius: 16px;
+}
+
+.pagina-carrito .rectangle-2 {
+    width: 485px;
+    height: 102px;
+    top: 787px;
+    left: 118px;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 16px;
+}
+
+.pagina-carrito .PRICE {
+    position: absolute;
+    width: 502px;
+    top: 471px;
+    left: 125px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.pagina-carrito .text-wrapper {
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+}
+
+.pagina-carrito .span {
+    font-size: 32px;
+}
+
+.pagina-carrito .rectangle-3 {
+    width: 492px;
+    height: 89px;
+    top: 272px;
+    left: 124px;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 16px;
+}
+
+.pagina-carrito .text-wrapper-2 {
+    position: absolute;
+    width: 418px;
+    top: 300px;
+    left: 283px;
+    font-family: "Tahoma-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.pagina-carrito .rectangle-4 {
+    position: absolute;
+    width: 492px;
+    height: 93px;
+    top: 91px;
+    left: 118px;
+    background-color: #000000;
+    border-radius: 16px;
+}
+
+.pagina-carrito .text-wrapper-3 {
+    position: absolute;
+    width: 671px;
+    top: 112px;
+    left: 292px;
+    font-family: "Tahoma-Regular", Helvetica;
+    font-weight: 400;
+    color: #fdfdfd;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.pagina-carrito .shopping-cart {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 785px;
+    left: 411px;
+}
+
+.pagina-carrito .text-wrapper-4 {
+    position: absolute;
+    width: 259px;
+    top: 814px;
+    left: 202px;
+    font-family: "Tahoma-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.pagina-carrito .element {
+    position: absolute;
+    width: 779px;
+    height: 982px;
+    top: 20px;
+    left: 23px;
+    object-fit: cover;
+}
+/* Estilos para elementos de texto y botón */
+/* (Ajusta estos estilos según tus necesidades) */
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    .overlap-group {
+        flex-direction: column;
+    }
+
+    .overlap-group img {
+        width: 100%;
+    }
+}
+

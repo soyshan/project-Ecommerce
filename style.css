@@ -1,4 +1,7 @@
-
+html {
+    height: 100vh;
+    width: 100vh;
+}
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +10,7 @@ body {
 }
 
 .pagina-carrito {
-    display: flex;
+    display:grid ;
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
@@ -15,8 +18,17 @@ body {
     width: 100vh;
 }
 
+.rectangles {
+    display: grid;
+    grid-template-columns: 1fr;
+    position:relative;
+    top: 100px;
+    right:100px;
+    z-index: 2;
+}
 .div {
-    max-width: 1200px;
+    display: flex;
+    max-width: 100vh;
     width: 100%;
     margin: 20px;
     position: relative;
@@ -24,17 +36,19 @@ body {
 
 .overlap-group {
     max-width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1%;
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+   
 }
 
 /* Estilos para imágenes */
 .overlap-group img {
     max-width: 100%;
-    height: auto;
-    margin: 10px;
+    height: auto;;
     object-fit: cover;
 }
 
@@ -48,71 +62,17 @@ body {
 }
 
 .pagina-carrito .div {
-    width: 1200px;
-    height: 1023px;
+    width: 100vh;
+    height: 100vh;
     position: relative;
 }
 
 .pagina-carrito .overlap-group {
     position: absolute;
-    width: 963px;
-    height: 998px;
+    width: 100vh;
+    height: 100vh;
     top: 15px;
     left: 817px;
-}
-
-.pagina-carrito .pexels-bruno-bueno {
-    position: absolute;
-    width: 364px;
-    height: 371px;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
-.pagina-carrito .trompeta {
-    position: absolute;
-    width: 369px;
-    height: 368px;
-    top: 0;
-    left: 369px;
-    object-fit: cover;
-}
-
-.pagina-carrito .arbol {
-    position: absolute;
-    width: 360px;
-    height: 370px;
-    top: 402px;
-    left: 0;
-    object-fit: cover;
-}
-
-.pagina-carrito .chicatrigo {
-    position: absolute;
-    width: 299px;
-    height: 439px;
-    top: 360px;
-    left: 418px;
-    object-fit: cover;
-}
-
-.pagina-carrito .gekko {
-    position: absolute;
-    width: 380px;
-    height: 208px;
-    top: 788px;
-    left: 0;
-    object-fit: cover;
-}
-
-.pagina-carrito .espinascielo {
-    position: absolute;
-    width: 198px;
-    height: 193px;
-    top: 805px;
-    left: 482px;
-    object-fit: cover;
 }
 
 .pagina-carrito .rectangle {
@@ -139,10 +99,9 @@ body {
 
 .pagina-carrito .PRICE {
     position: absolute;
-    width: 502px;
     top: 471px;
     left: 125px;
-    font-family: "Inter-Regular", Helvetica;
+    font-family:"Tahoma-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 48px;
@@ -151,7 +110,7 @@ body {
 }
 
 .pagina-carrito .text-wrapper {
-    font-family: "Inter-Regular", Helvetica;
+    font-family: "Tahoma-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
     font-size: 48px;
@@ -174,7 +133,6 @@ body {
 
 .pagina-carrito .text-wrapper-2 {
     position: absolute;
-    width: 418px;
     top: 300px;
     left: 283px;
     font-family: "Tahoma-Regular", Helvetica;
@@ -198,7 +156,6 @@ body {
 
 .pagina-carrito .text-wrapper-3 {
     position: absolute;
-    width: 671px;
     top: 112px;
     left: 292px;
     font-family: "Tahoma-Regular", Helvetica;

@@ -1,8 +1,6 @@
 
 .dropdown-container {
-    position: absolute;
-    left: 20px;
-    bottom: 200px;
+    position: relative;
     background-color: transparent;
     width:130px;
   }
@@ -17,7 +15,7 @@
   }
   
   .dropdown-menu {
-    position: absolute;
+    position:absolute;
     bottom: 100%;
     left: 0;
     width: 250%;

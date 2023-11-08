@@ -4,56 +4,47 @@
    
 }
 
-.div {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    position: relative;
-}
-.semilla{
-    height: 95%;
-    right: -25%;
-    position: relative;
-}
-.chicabn{
-    height: 95%;
-    position: relative;
+body{
 
+    display:flex;
+    overflow: hidden;
 }
-.chicatrigo{
-    height: 95%;
-    position: relative;
-    right: -37%;
 
-}
-.overlap-group {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1%;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    margin-top: 10px;
-    width: 100%;
+.collage{
+
+    position:relative;
+    width:53%;
     height: 100%;
-    top: 0%;
-    left: 110%;
+    filter: blur(8px);
     
-   
+    
 }
+
+.peligro {
+    position:relative;
+    width:53%;
+    height: 100%;
+}
+
+.paginaentera{ 
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+   
+    
 
  .rectangles {
-    width: 100%;
+    width: 45%;
     height: 80%;
     top: 10%;
-    left: 115%;
+    left: 52.5%;
     background-color: #e4e2e280;
     border: 6px solid;
     border-color: #000000;
     position: absolute;
     border-radius: 16px;
-    z-index: 2;
+    z-index: 12;
 }
 
 .rectangle-2 {
@@ -72,10 +63,9 @@
     cursor: pointer;
 }
 
- .span {
-    font-size: 32px;
+ 
 
-}
+
 
 .rectangle-3 {
     width: 50%;
@@ -93,115 +83,68 @@
     z-index: 10;
 }
 
- .rectangle-4 {
+.text-wrapper{
+   
+    top:50%;
+    left: 35%;
     position: absolute;
-    width: 492px;
-    height: 93px;
-    top: 91px;
-    left: 118px;
-    background-color: #000000;
-    border-radius: 16px;
+    color:black;
+    font-size:64px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10;
 }
+
+ .rectangle-4 {
+    width: 50%;
+    height: 7%;
+    top: 75%;
+    left: 25%;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 6rem;
+    color:white;
+    font-size:64px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+ }
 
 .shopping-cart {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 785px;
-    left: 411px;
-}
- .element {
-    position: absolute;
-    width:53%;
-    height: 100%;
-    
+    width: 5%;
+    height: 5%;
+    top: 76%;
+    right: 30%;
+    z-index: 12;
+    background-color:transparent;
 }
 
-/* Estilos para elementos de texto y botón */
-/* (Ajusta estos estilos según tus necesidades) */
 
-/* Estilos específicos para dispositivos móviles */
-/* Estilos base comunes para todos los dispositivos */
 
-/* Estilos específicos para dispositivos pequeños (por ejemplo, smartphones) */
-@media (max-width: 767px) {
-    .pagina-carrito {
-        align-items: flex-start;
+
+
+
+    /* Estilos generales que se aplicarán a todas las pantallas */
+/* No es necesario modificar tu código existente aquí */
+
+
+@media screen and (max-width: 480px) {
+     .collage {
+      max-width: ;
+      height: 100$;
     }
-    .div{
-        display: flex;
-        max-height: 100vh;
-        width: 100%;
-        margin: 20px;
-        position: relative;
+    .rectangles {
+      flex-direction: column;
+      text-align: center; /* Centra el texto en dispositivos móviles */
     }
-    .overlap-group {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    .rectangle {
-        width: 100%;
-        top: 10px;
-        left: 0;
-    }
-    .rectangle-2 {
-        width: 100%;
-        top: 20px;
-        left: 0;
+    .rectangle-2, .rectangle-3, .rectangle-4 {
+      width: 100%; /* Ajusta el ancho de los botones al 100% del contenedor */
     }
     .PRICE {
-        top: 20px;
-        left: 10px;
-        font-size: 32px;
+      text-align: center; /* Centra el texto PRICE en dispositivos móviles */
+      font-size: 24px;
     }
-    .rectangle-3 {
-        width: 100%;
-        top: 50px;
-        left: 0;
-    }
-    .text-wrapper-2 {
-        top: 70px;
-        left: 10px;
-        font-size: 20px;
-    }
-    .rectangle-4 {
-        width: 100%;
-        top: 110px;
-        left: 0;
-    }
-    .text-wrapper-3 {
-        top: 130px;
-        left: 10px;
-        font-size: 20px;
-    }
-    .shopping-cart {
-        top: 160px;
-        left: 10px;
-        width: 60px;
-        height: 60px;
-    }
-    .text-wrapper-4 {
-        top: 180px;
-        left: 80px;
-        font-size: 20px;
-    }
-    .element {
-        width: 100%;
-        height: auto;
-        top: 220px;
-        left: 0;
-    }
-}
-
-/* Estilos específicos para dispositivos medianos (por ejemplo, tabletas) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* Ajusta los estilos para dispositivos medianos si es necesario */
-}
-
-/* Estilos específicos para dispositivos grandes (por ejemplo, pantallas de escritorio) */
-@media (min-width: 1024px) {
-    /* Ajusta los estilos para dispositivos grandes si es necesario */
-}
-
-
+  }
+  
 

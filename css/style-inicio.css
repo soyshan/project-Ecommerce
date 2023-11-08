@@ -1,16 +1,14 @@
 /* Globales */
-*::after,
-*::before,
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family:"TAHOMA";
 }
 
 body {
     background-color: black;
-    width: 100%;
+    width: 100vh;
 }
 .inicio{
     display: grid;
@@ -19,25 +17,28 @@ body {
 .foto-logo{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 60px;
-    width: 100%;
+    width: 100vh;
     
 }
 
 .imagen-lengua{
-    width: 100%;
+    width: 100vh;
     overflow-x: hidden;
     text-align: right;
+    right: 0;
+    position:absolute;
 }
 
 .imagen-logo{
     width: 55%;
 
 }
-
+.contenedor-de-video{
+    width: 50vh;
+}
 .animated-title{
     transform: translateY(100%);
-    width: 100%;
+    width: 100vh;
     /* text-align: center; */
     color: #ddd;
     font-size: 50px;
@@ -101,22 +102,31 @@ body {
     color: #f0f0f0;
     font-size: 10px;
     padding: 10%;
+    width: 50vh;
     
 }
+.video{
+    width: 50vh;
+
+}
 .contacta{
+    width: 50vh;
 
 }
 
 .redes{
     width: 200px;
     height: 40px;
-   background-color: aqua;
-   bottom: 20px;
-   left: 20px;
+    background-color: aqua;
+    bottom: 20px;
+    left: 20px;
 
 }
 .copy{
     color: #f0f0f0;
     font-size: 10px;
     padding: 10%;
+}
+footer{
+    display: grid;
 }

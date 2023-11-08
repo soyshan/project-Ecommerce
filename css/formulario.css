@@ -8,7 +8,7 @@ body{
   font-size:15px;
   position:relative;
   padding-bottom:3em;
-  background-image: url(../fotios/fondo/login.png);
+  background-image: url(../fotios/fondologin.png);
   background-size: cover;/* Esto ajusta la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Esto evita que la imagen se repita */
   background-attachment: fixed; /* Esto fija la imagen de fondo para que no se desplace con el contenido */

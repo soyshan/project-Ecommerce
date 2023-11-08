@@ -1,0 +1,122 @@
+/* Globales */
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"TAHOMA";
+}
+
+body {
+    background-color: black;
+    width: 100%;
+}
+.inicio{
+    display: grid;
+}
+
+.foto-logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+    width: 100%;
+    
+}
+
+.imagen-lengua{
+    width: 100%;
+    overflow-x: hidden;
+    text-align: right;
+}
+
+.imagen-logo{
+    width: 55%;
+
+}
+
+.animated-title{
+    transform: translateY(100%);
+    width: 100%;
+    /* text-align: center; */
+    color: #ddd;
+    font-size: 50px;
+    font-family: tahoma;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.animated-title span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+}
+
+ animated-title:nth-child(1)
+{
+    animation-delay: 1s;
+}
+.animated-title span:nth-child(2)
+{
+    animation-delay: 2s;
+}
+.animated-title span:nth-child(3)
+{
+    animation-delay: 2.5s;
+}
+.animated-title span:nth-child(4)
+{
+    animation-delay: 3s;
+}
+.animated-title span:nth-child(5)
+{
+    animation-delay: 3.5s;
+}
+.animated-title span:nth-child(6)
+{
+    animation-delay: 3.75s;
+}
+.animated-title span:nth-child(7)
+{
+    animation-delay: 4s;
+}
+.animated-title span:nth-child(8)
+{
+    animation-delay: 4.5s;
+}
+.texto{
+    color: #f0f0f0;
+    font-size: 10px;
+    padding: 10%;
+    
+}
+.contacta{
+
+}
+
+.redes{
+    width: 200px;
+    height: 40px;
+   background-color: aqua;
+   bottom: 20px;
+   left: 20px;
+
+}
+.copy{
+    color: #f0f0f0;
+    font-size: 10px;
+    padding: 10%;
+}

@@ -1,4 +1,3 @@
-shan eres una maquina
 *{ box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@ body{
   font-size:15px;
   position:relative;
   padding-bottom:3em;
-  background-image: url(/Recursos/fondo\ login.png);
+  background-image: url(/fotios/fondo\ login.png);
   background-size: cover;/* Esto ajusta la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Esto evita que la imagen se repita */
   background-attachment: fixed; /* Esto fija la imagen de fondo para que no se desplace con el contenido */
@@ -181,7 +180,8 @@ body{
   padding: 5%;
   margin-left: 21rem;
   margin-right: 5rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
+
   
 }
 
@@ -197,11 +197,10 @@ body{
     align-items: center;
   }
 
-
 .logosize {
   height:6rem;
   width: auto;
-  padding-left:477%;
+  padding-left:540%;
   
 }
 
@@ -262,6 +261,7 @@ body{
 
  /* Estilos para dispositivos móviles */
   @media screen and (max-width: 767px) {
+
   body {
     display: flex;
     justify-content: center;}
@@ -269,13 +269,14 @@ body{
       padding: 5%;
       margin-left: 8.5rem;
       margin-right: 22rem;
-      margin-top: 10rem;
+      margin-top: 12rem;
       
     }
     .logosize {
       height:7rem;
       width: auto;
       padding-left:30%;
+      padding-bottom:5%;
       
     }
 
@@ -307,7 +308,7 @@ body{
       position: absolute;
       margin-left: 2rem;
       margin-right:2rem;
-      margin-top: 2rem;
+      margin-top: 5rem;
       width: auto;
       height: 26rem;
       display:flex;
@@ -341,6 +342,11 @@ body{
    .textoregistro .linkregistro {
     padding-left: 0rem;
   }
+
+  .estilofooter{
+    height: 25%
+  }
+
 }
 
 
@@ -366,7 +372,7 @@ body{
 .logosize {
   height:10rem;
   width: auto;
-  padding-left:30%;
+  padding-left:90%;
   }
 
   .ventanaformulario{
@@ -414,5 +420,8 @@ body{
     padding-left: 0rem;
   }
   
-   
+  .estilofooter{
+    height: 20%
+  }
+
 }

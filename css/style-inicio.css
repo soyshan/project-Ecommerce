@@ -135,3 +135,63 @@ footer{
     font-size: 1.5vw;
     position:relative;  
 }
+
+/* Estilos responsive */
+@media only screen and (max-width: 767px) {
+    .foto-logo {
+        text-align: center;
+    }
+
+    .imagen-logo {
+        z-index:3;
+        top:200%;
+    }
+
+    .imagen-lengua {
+        position: absolute;
+        left: 60%;
+        width: 1948px;
+        overflow-x: hidden;
+    }
+
+    .contenedor-de-video {
+        padding: 20px;
+    }
+
+    .video {
+        max-width: 100%;
+    }
+
+    .texto {
+        font-size: 5vw;
+        top: 160%;
+        position: absolute;
+        width: 70vh;
+        left: 30%;
+    }
+    footer{
+    position: absolute;
+    bottom: -120%;
+    width: 90vh;
+    }
+    .copy{
+        color: #f0f0f0;
+        font-size: 3vw;
+        position:relative;  
+    }
+    .animated-title{
+        transform: translateY(100%);
+        width: 100vh;
+        /* text-align: center; */
+        color: #ddd;
+        font-size: 50px;
+        font-family: tahoma;
+        letter-spacing: 10px;
+        position:absolute;
+        top: 100%;
+        left: 35%;
+        animation: animate 8s linear forwards infinite;
+       
+    }
+    
+}

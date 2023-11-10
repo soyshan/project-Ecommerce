@@ -10,9 +10,11 @@ body {
     background-color: black;
     width: 100vh;
     height: 100vw;
-    overflow: scroll;
+    overflow-X:hidden;
+    overflow-y: hidden;
     /*background-image: url(../fotios/portada-lengua.jpg);
     background-size: cover;*/
+
 }
 .inicio{
     display: grid;
@@ -41,7 +43,12 @@ body {
 
 }
 .contenedor-de-video{
-    width: 50vh;
+    width: auto;
+    height: 100px;
+    padding: 0%;
+    position: absolute;
+    z-index: -1;
+    top: 10%;
 }
 .animated-title{
     transform: translateY(100%);
@@ -53,7 +60,7 @@ body {
     letter-spacing: 10px;
     position:absolute;
     top: 60%;
-    left: 10%;
+    padding-left: 20%;
     animation: animate 8s linear forwards infinite;
    
 }
@@ -111,27 +118,21 @@ body {
 
 .texto{
     color: #f0f0f0;
-    font-size: 1.5em;
+    font-size: 1 rem;
     padding: 10%;
     width: 100vh;
     position:absolute;
-    top: 45%;
+    top: 50%;
     left: 4%;
     text-align: justify;
+    
+}
 
-}
-.contenedormeixock{
-    animation-iteration-count: infinite;
-}
-.video{
-    width: 50vh;
-
-}
 
 footer{
     position:absolute;
     bottom: 0%;
-    width: 90vh;
+    width: 100vh;
 }
 
 .copy{
@@ -140,41 +141,44 @@ footer{
     position:relative;  
 }
 
+
+
 /* Estilos responsive */
 @media screen and (max-width: 767px) {
     .foto-logo {
         position: absolute;
-        width: 45%;
-        top:30%;
-        left: 20%;
+        width: 30%;
+        top:10%;
+        left: 2%;
         z-index: 4;
     }
     .imagen-logo {
         position: inherit;
         top: 0%;
-        left: 0%;
+        left: 10%;
         width: 100%;
         display: block;
         z-index: 3;
+    
     }
     .texto {
         font-size: 2vw;
         width: 100%;
-        top: 0%;
+        top: -30%;
         left: 0%;
         position: relative;
         text-align: justify;
     }
     .contenedor-foto-lengua{
         position: absolute;
-        right: 0;
         top: 0;
         height: 100%;
         width: 45%;
-        overflow-x: hidden;
+        right: 35%;
+    
     }
     .imagen-lengua {
-        position: relative;
+        position: absolute;
         left: 0%;
         top:0%;
         /*height: 60%;*/
@@ -203,14 +207,15 @@ footer{
     }
     .video {
         position: absolute;
-        top: -900%;
+        top: 10%;
         left: -20%;
     }
     footer{
         position: absolute;
-        bottom: 0%;
+        bottom: 50%;
         width: 90vh;
-        margin: 2%; 
+        margin: 0%; 
+
     }
     .copy{
         color: #f0f0f0;

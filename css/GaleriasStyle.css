@@ -98,7 +98,7 @@ body{
 
 
 /*esto es para hacer el responsive  */
-@media (max-width: 450px) {
+@media (max-width: 767px) {
     .fotos {
       grid-template-columns: 1fr;
     }
@@ -121,7 +121,7 @@ body{
         justify-content: center;
     }
 }
-@media (min-width: 450px){
+@media (min-width: 767px){
     .encabezado{
         position: fixed;
         width: 33%;

@@ -9,6 +9,8 @@
 body {
     background-color: black;
     width: 100vh;
+    overflow: hidden;
+    
 }
 .inicio{
     display: grid;
@@ -30,7 +32,10 @@ body {
 }
 
 .imagen-logo{
-    width: 55%;
+    width: 55vh;
+    position: relative;
+    top:0;
+    left: 45%;
 
 }
 .contenedor-de-video{
@@ -44,8 +49,11 @@ body {
     font-size: 50px;
     font-family: tahoma;
     letter-spacing: 10px;
-    display: flex;
-    justify-content: center;
+    position:absolute;
+    top: 60%;
+    left: 10%;
+    animation: animate 8s linear forwards infinite;
+   
 }
 
 .animated-title span{
@@ -103,30 +111,87 @@ body {
     font-size: 10px;
     padding: 10%;
     width: 50vh;
-    
+    position:absolute;
+    top: 55%;
+    left: 4%;
+
+}
+.contenedormeixock{
+    animation-iteration-count: infinite;
 }
 .video{
     width: 50vh;
 
 }
-.contacta{
-    width: 50vh;
 
+footer{
+    position:absolute;
+    bottom: 0%;
+    width: 90vh;
 }
 
-.redes{
-    width: 200px;
-    height: 40px;
-    background-color: aqua;
-    bottom: 20px;
-    left: 20px;
-
-}
 .copy{
     color: #f0f0f0;
-    font-size: 10px;
-    padding: 10%;
+    font-size: 1.5vw;
+    position:relative;  
 }
-footer{
-    display: grid;
+
+/* Estilos responsive */
+@media only screen and (max-width: 767px) {
+    .foto-logo {
+        text-align: center;
+    }
+
+    .imagen-logo {
+        z-index:3;
+        top:200%;
+    }
+
+    .imagen-lengua {
+        position: absolute;
+        left: 60%;
+        width: 1948px;
+        overflow-x: hidden;
+    }
+
+    .contenedor-de-video {
+        padding: 20px;
+    }
+
+    .video {
+        max-width: 100%;
+    }
+
+    .texto {
+        font-size: 5vw;
+        top: 160%;
+        position: absolute;
+        width: 70vh;
+        left: 30%;
+    }
+    footer{
+    position: absolute;
+    bottom: -120%;
+    width: 90vh;
+    }
+    .copy{
+        color: #f0f0f0;
+        font-size: 3vw;
+        position:relative;  
+    }
+    .animated-title{
+        transform: translateY(100%);
+        width: 100vh;
+        /* text-align: center; */
+        color: #ddd;
+        font-size: 50px;
+        font-family: tahoma;
+        letter-spacing: 10px;
+        position:absolute;
+        top: 100%;
+        left: 35%;
+        animation: animate 8s linear forwards infinite;
+       
+    }
+    
 }

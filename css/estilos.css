@@ -16,9 +16,9 @@
   
   .dropdown-menu {
     position:absolute;
-    bottom: 100%;
-    left: 0;
-    width: 250%;
+    bottom: 0%;
+    left: 100%;
+    width: 210%;
     height: 0;
     overflow: hidden;
     background-color: transparent;
@@ -28,6 +28,7 @@
     text-align: right;
     border-width: 0px;
     color:#ffffff;
+    z-index: 30;
   }
   
   .dropdown-menu ul {
@@ -39,7 +40,7 @@
   }
   
   .dropdown-menu li {
-    padding: 10px;
+    padding: 0px;
     vertical-align: middle;
     color:#ffffff;
   }

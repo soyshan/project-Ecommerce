@@ -1,7 +1,7 @@
 # chichaRrica
 Pagina del superfotografo internacional MM
 
-Hemos creado una pagina web de fotografía, donde están disponibles y a la venta unas fotosgrafías, se pueden ver en galeria
+Hemos creado una pagina web de fotografía, donde están disponibles y a la venta unas fotografías, se pueden ver en galeria
 y añadir en un carrito para la compra.
 
 

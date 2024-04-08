@@ -1,4 +1,4 @@
-# chichaRrica
+# Ecommerce de Fotografía
 
 Esta página web fue creada para el reconocido fotógrafo internacional MM.
 
